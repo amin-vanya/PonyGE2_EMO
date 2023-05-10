@@ -490,6 +490,13 @@ def parse_cmd_args(arguments):
                              ' other nearby agents in the environment. By default'
                              ' 0.5 probability is used. Higher the probability the time'
                              ' to find the solution would be reduced')
+    # SCALARIZING FUNCTIONS
+    parser.add_argument('--sf_problems',
+                        dest='SF_PROBLEMS',
+                        type=str,
+                        help='Specifies the problems to be used in the scalarizing functions generation.'
+                             'Available problems are DTLZ1-7 and WFG1-9. Multiple problems are allowed,'
+                             'but must be separated with commas')
 
     # CACHING
     class CachingAction(argparse.Action):

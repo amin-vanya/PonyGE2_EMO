@@ -1,0 +1,3 @@
+./emo_moea NSGA2 input/Param_02D.cfg zdt1 1
+./emo_moea NSGA3 input/Param_02D.cfg zdt1 1
+./emo_moea MOMBI2 input/Param_02D.cfg zdt1 1

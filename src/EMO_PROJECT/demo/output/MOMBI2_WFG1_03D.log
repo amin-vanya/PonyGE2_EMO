@@ -1,0 +1,172 @@
+1|2023/05/09 18:21:09 => Start of the debug
+2|2023/05/09 18:21:09 => Reading parameter file input/Param_03D_25k.cfg
+3|2023/05/09 18:21:09 => Parser:get_int:wfg_nvar=24
+4|2023/05/09 18:21:09 => Parser:get_int:wfg_npos=4
+5|2023/05/09 18:21:09 => Parser:get_int:nobj=3
+6|2023/05/09 18:21:09 => Parser:get_int:ncon=0
+7|2023/05/09 18:21:09 => Benchmark:test function WFG1
+8|2023/05/09 18:21:09 => Benchmark:variables: 24
+9|2023/05/09 18:21:09 => Benchmark:objective functions: 3
+10|2023/05/09 18:21:09 => Benchmark:constraints: 0
+11|2023/05/09 18:21:09 => Benchmark:position parameters: 4
+12|2023/05/09 18:21:09 => Benchmark:encoding: 1
+13|2023/05/09 18:21:09 => Benchmark:lower bound (0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000)
+14|2023/05/09 18:21:09 => Benchmark:upper bound (1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000)
+15|2023/05/09 18:21:09 => Parser:get_char:output=./output
+16|2023/05/09 18:21:09 => EMO_MPI is not defined
+17|2023/05/09 18:21:09 => Parser:get_char:seed=./input/seed.dat
+18|2023/05/09 18:21:09 => EMO_Rand:next seed=5
+19|2023/05/09 18:21:09 => Parser:get_int:feval=25000
+20|2023/05/09 18:21:09 => Parser:get_int:plot_freq=-1
+21|2023/05/09 18:21:09 => Parser:get_char:plot_pftrue=
+22|2023/05/09 18:21:09 => Parser:get_char:plot_term=x11
+23|2023/05/09 18:21:09 => Parser:get_int:debug=1
+24|2023/05/09 18:21:09 => Parser:get_int:psize=106
+25|2023/05/09 18:21:09 => Parser:get_double:pc=0.900000
+26|2023/05/09 18:21:09 => Parser:get_double:pm=-1.000000
+27|2023/05/09 18:21:09 => Parser:get_double:nc=20.000000
+28|2023/05/09 18:21:09 => Parser:get_double:nm=20.000000
+29|2023/05/09 18:21:09 => pm updated 0.041667
+30|2023/05/09 18:21:09 => Parser:get_char:wfile=./input/weight/weight_03D_13.sld
+31|2023/05/09 18:21:09 => Parser:get_int:mombi2_record=5
+32|2023/05/09 18:21:09 => Parser:get_double:mombi2_alpha=0.500000
+33|2023/05/09 18:21:09 => Parser:get_double:mombi2_epsilon=0.001000
+34|2023/05/09 18:21:09 => Parser:get_vector_double:mombi2_refpoint ()
+35|2023/05/09 18:21:09 => Parser:get_char:mombi2_utility=achievement_scalarizing_function
+36|2023/05/09 18:21:09 => Parser:get_int:utility_inverted=0
+37|2023/05/09 18:21:09 => run MOMBI2
+38|2023/05/09 18:21:09 => Program stopped: maximum number of objective function evaluations reached (25000)
+39|2023/05/09 18:21:09 => Real execution time: 0s.408289
+40|2023/05/09 18:21:09 => Objective function evaluations: 25016
+41|2023/05/09 18:21:09 => Fitness value: 0.000000
+42|2023/05/09 18:21:09 => Total execution time: 0s.408289
+43|2023/05/09 18:21:09 => Number of objective function evaluations: 25016
+44|2023/05/09 18:21:09 => Performance indicator of the Pareto front: 5.000000
+45|2023/05/09 18:21:09 => EMO_Rand:next seed=13
+46|2023/05/09 18:21:09 => run MOMBI2
+47|2023/05/09 18:21:10 => Program stopped: maximum number of objective function evaluations reached (25000)
+48|2023/05/09 18:21:10 => Real execution time: 0s.409073
+49|2023/05/09 18:21:10 => Objective function evaluations: 25016
+50|2023/05/09 18:21:10 => Fitness value: 0.000000
+51|2023/05/09 18:21:10 => Total execution time: 0s.409073
+52|2023/05/09 18:21:10 => Number of objective function evaluations: 25016
+53|2023/05/09 18:21:10 => Performance indicator of the Pareto front: 5.000000
+54|2023/05/09 18:21:10 => EMO_Rand:next seed=23
+55|2023/05/09 18:21:10 => run MOMBI2
+56|2023/05/09 18:21:10 => Program stopped: maximum number of objective function evaluations reached (25000)
+57|2023/05/09 18:21:10 => Real execution time: 0s.394350
+58|2023/05/09 18:21:10 => Objective function evaluations: 25016
+59|2023/05/09 18:21:10 => Fitness value: 0.000000
+60|2023/05/09 18:21:10 => Total execution time: 0s.394350
+61|2023/05/09 18:21:10 => Number of objective function evaluations: 25016
+62|2023/05/09 18:21:10 => Performance indicator of the Pareto front: 5.000000
+63|2023/05/09 18:21:10 => EMO_Rand:next seed=37
+64|2023/05/09 18:21:10 => run MOMBI2
+65|2023/05/09 18:21:10 => Program stopped: maximum number of objective function evaluations reached (25000)
+66|2023/05/09 18:21:10 => Real execution time: 0s.402724
+67|2023/05/09 18:21:10 => Objective function evaluations: 25016
+68|2023/05/09 18:21:10 => Fitness value: 0.000000
+69|2023/05/09 18:21:10 => Total execution time: 0s.402724
+70|2023/05/09 18:21:10 => Number of objective function evaluations: 25016
+71|2023/05/09 18:21:10 => Performance indicator of the Pareto front: 5.000000
+72|2023/05/09 18:21:10 => EMO_Rand:next seed=47
+73|2023/05/09 18:21:10 => run MOMBI2
+74|2023/05/09 18:21:11 => Program stopped: maximum number of objective function evaluations reached (25000)
+75|2023/05/09 18:21:11 => Real execution time: 0s.466046
+76|2023/05/09 18:21:11 => Objective function evaluations: 25016
+77|2023/05/09 18:21:11 => Fitness value: 0.000000
+78|2023/05/09 18:21:11 => Total execution time: 0s.466046
+79|2023/05/09 18:21:11 => Number of objective function evaluations: 25016
+80|2023/05/09 18:21:11 => Performance indicator of the Pareto front: 5.000000
+81|2023/05/09 18:21:11 => EMO_Rand:next seed=61
+82|2023/05/09 18:21:11 => run MOMBI2
+83|2023/05/09 18:21:11 => Program stopped: maximum number of objective function evaluations reached (25000)
+84|2023/05/09 18:21:11 => Real execution time: 0s.473225
+85|2023/05/09 18:21:11 => Objective function evaluations: 25016
+86|2023/05/09 18:21:11 => Fitness value: 0.000000
+87|2023/05/09 18:21:11 => Total execution time: 0s.473225
+88|2023/05/09 18:21:11 => Number of objective function evaluations: 25016
+89|2023/05/09 18:21:11 => Performance indicator of the Pareto front: 5.000000
+90|2023/05/09 18:21:11 => EMO_Rand:next seed=73
+91|2023/05/09 18:21:11 => run MOMBI2
+92|2023/05/09 18:21:12 => Program stopped: maximum number of objective function evaluations reached (25000)
+93|2023/05/09 18:21:12 => Real execution time: 0s.464006
+94|2023/05/09 18:21:12 => Objective function evaluations: 25016
+95|2023/05/09 18:21:12 => Fitness value: 0.000000
+96|2023/05/09 18:21:12 => Total execution time: 0s.464006
+97|2023/05/09 18:21:12 => Number of objective function evaluations: 25016
+98|2023/05/09 18:21:12 => Performance indicator of the Pareto front: 5.000000
+99|2023/05/09 18:21:12 => EMO_Rand:next seed=89
+100|2023/05/09 18:21:12 => run MOMBI2
+101|2023/05/09 18:21:12 => Program stopped: maximum number of objective function evaluations reached (25000)
+102|2023/05/09 18:21:12 => Real execution time: 0s.437955
+103|2023/05/09 18:21:12 => Objective function evaluations: 25016
+104|2023/05/09 18:21:12 => Fitness value: 0.000000
+105|2023/05/09 18:21:12 => Total execution time: 0s.437955
+106|2023/05/09 18:21:12 => Number of objective function evaluations: 25016
+107|2023/05/09 18:21:12 => Performance indicator of the Pareto front: 5.000000
+108|2023/05/09 18:21:12 => EMO_Rand:next seed=103
+109|2023/05/09 18:21:12 => run MOMBI2
+110|2023/05/09 18:21:13 => Program stopped: maximum number of objective function evaluations reached (25000)
+111|2023/05/09 18:21:13 => Real execution time: 0s.432523
+112|2023/05/09 18:21:13 => Objective function evaluations: 25016
+113|2023/05/09 18:21:13 => Fitness value: 0.000000
+114|2023/05/09 18:21:13 => Total execution time: 0s.432523
+115|2023/05/09 18:21:13 => Number of objective function evaluations: 25016
+116|2023/05/09 18:21:13 => Performance indicator of the Pareto front: 5.000000
+117|2023/05/09 18:21:13 => EMO_Rand:next seed=113
+118|2023/05/09 18:21:13 => run MOMBI2
+119|2023/05/09 18:21:13 => Program stopped: maximum number of objective function evaluations reached (25000)
+120|2023/05/09 18:21:13 => Real execution time: 0s.427626
+121|2023/05/09 18:21:13 => Objective function evaluations: 25016
+122|2023/05/09 18:21:13 => Fitness value: 0.000000
+123|2023/05/09 18:21:13 => Total execution time: 0s.427626
+124|2023/05/09 18:21:13 => Number of objective function evaluations: 25016
+125|2023/05/09 18:21:13 => Performance indicator of the Pareto front: 5.000000
+126|2023/05/09 18:21:13 => EMO_Rand:next seed=137
+127|2023/05/09 18:21:13 => run MOMBI2
+128|2023/05/09 18:21:14 => Program stopped: maximum number of objective function evaluations reached (25000)
+129|2023/05/09 18:21:14 => Real execution time: 0s.408547
+130|2023/05/09 18:21:14 => Objective function evaluations: 25016
+131|2023/05/09 18:21:14 => Fitness value: 0.000000
+132|2023/05/09 18:21:14 => Total execution time: 0s.408547
+133|2023/05/09 18:21:14 => Number of objective function evaluations: 25016
+134|2023/05/09 18:21:14 => Performance indicator of the Pareto front: 5.000000
+135|2023/05/09 18:21:14 => EMO_Rand:next seed=151
+136|2023/05/09 18:21:14 => run MOMBI2
+137|2023/05/09 18:21:14 => Program stopped: maximum number of objective function evaluations reached (25000)
+138|2023/05/09 18:21:14 => Real execution time: 0s.396279
+139|2023/05/09 18:21:14 => Objective function evaluations: 25016
+140|2023/05/09 18:21:14 => Fitness value: 0.000000
+141|2023/05/09 18:21:14 => Total execution time: 0s.396279
+142|2023/05/09 18:21:14 => Number of objective function evaluations: 25016
+143|2023/05/09 18:21:14 => Performance indicator of the Pareto front: 5.000000
+144|2023/05/09 18:21:14 => EMO_Rand:next seed=167
+145|2023/05/09 18:21:14 => run MOMBI2
+146|2023/05/09 18:21:14 => Program stopped: maximum number of objective function evaluations reached (25000)
+147|2023/05/09 18:21:14 => Real execution time: 0s.346924
+148|2023/05/09 18:21:14 => Objective function evaluations: 25016
+149|2023/05/09 18:21:14 => Fitness value: 0.000000
+150|2023/05/09 18:21:14 => Total execution time: 0s.346924
+151|2023/05/09 18:21:14 => Number of objective function evaluations: 25016
+152|2023/05/09 18:21:14 => Performance indicator of the Pareto front: 5.000000
+153|2023/05/09 18:21:14 => EMO_Rand:next seed=181
+154|2023/05/09 18:21:14 => run MOMBI2
+155|2023/05/09 18:21:15 => Program stopped: maximum number of objective function evaluations reached (25000)
+156|2023/05/09 18:21:15 => Real execution time: 0s.394557
+157|2023/05/09 18:21:15 => Objective function evaluations: 25016
+158|2023/05/09 18:21:15 => Fitness value: 0.000000
+159|2023/05/09 18:21:15 => Total execution time: 0s.394557
+160|2023/05/09 18:21:15 => Number of objective function evaluations: 25016
+161|2023/05/09 18:21:15 => Performance indicator of the Pareto front: 5.000000
+162|2023/05/09 18:21:15 => EMO_Rand:next seed=197
+163|2023/05/09 18:21:15 => run MOMBI2
+164|2023/05/09 18:21:15 => Program stopped: maximum number of objective function evaluations reached (25000)
+165|2023/05/09 18:21:15 => Real execution time: 0s.407715
+166|2023/05/09 18:21:15 => Objective function evaluations: 25016
+167|2023/05/09 18:21:15 => Fitness value: 0.000000
+168|2023/05/09 18:21:15 => Total execution time: 0s.407715
+169|2023/05/09 18:21:15 => Number of objective function evaluations: 25016
+170|2023/05/09 18:21:15 => Performance indicator of the Pareto front: 5.000000
+171|2023/05/09 18:21:15 => EMO_Rand:next seed=223
+172|2023/05/09 18:21:15 => End of the debug

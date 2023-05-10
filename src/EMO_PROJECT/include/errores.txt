@@ -1,0 +1,1 @@
+Verificar que emo.h coincida con las definiciones en archivos .h
