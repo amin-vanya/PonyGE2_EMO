@@ -212,7 +212,7 @@ def get_moo_stats(individuals, end):
                 to_plot = [i[o] for i in trackers.best_fitness_list]
 
                 # Plot fitness data for objective o.
-                plotname = ff.__class__.__name__ + str(o)
+                plotname = ff.label
 
                 save_plot_from_data(to_plot, plotname)
 

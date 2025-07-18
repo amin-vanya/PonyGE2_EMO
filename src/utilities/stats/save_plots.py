@@ -5,10 +5,10 @@ import numpy as np
 import pandas as pd
 from utilities.stats.trackers import first_pareto_list
 
-matplotlib.use('Agg')
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-plt.rc('font', family='Times New Roman')
+plt.rc("font", family="Times New Roman")
 
 
 def save_pareto_fitness_plot():
@@ -28,42 +28,43 @@ def save_pareto_fitness_plot():
     color = iter(plt.cm.jet(np.linspace(0, 1, len(first_pareto_list))))
 
     # Get labels for individual fitnesses.
-    ffs = params['FITNESS_FUNCTION'].fitness_functions
+    ffs = params["FITNESS_FUNCTION"].fitness_functions
 
     # Find the direction for step lines to "bend"
-    step_dir = 'pre' if ffs[0].maximise else 'post'
+    step_dir = "pre" if ffs[0].maximise else "post"
 
     # Plot data.
     for i, gen in enumerate(first_pareto_list):
         c = next(color)
-        ax1.step(gen[0], gen[1], linestyle='--',
-                 where=step_dir, color=c, lw=0.35, alpha=0.25)
-        ax1.plot(gen[0], gen[1], 'o', color=c, ms=1)
+        ax1.step(
+            gen[0], gen[1], linestyle="--", where=step_dir, color=c, lw=0.35, alpha=0.25
+        )
+        ax1.plot(gen[0], gen[1], "o", color=c, ms=1)
 
     # Set labels with class names.
-    ax1.set_xlabel(ffs[0].__class__.__name__, fontsize=14)
-    ax1.set_ylabel(ffs[1].__class__.__name__, fontsize=14)
+    ax1.set_xlabel(ffs[0].label, fontsize=14)
+    ax1.set_ylabel(ffs[1].label, fontsize=14)
 
     # Plot title and legend.
     plt.title("First pareto fronts by generation")
 
     # Set up colorbar instead of legend. Normalise axis to scale of data.
-    sm = plt.cm.ScalarMappable(cmap="jet",
-                               norm=plt.Normalize(vmin=0, vmax=len(
-                                   first_pareto_list) - 1))
+    sm = plt.cm.ScalarMappable(
+        cmap="jet", norm=plt.Normalize(vmin=0, vmax=len(first_pareto_list) - 1)
+    )
 
     # Fake up the array of the scalar mappable.
     sm._A = []
 
     # Plot the colorbar.
-    cbar = plt.colorbar(sm,ax=ax1, ticks=[0, len(first_pareto_list) - 1])
+    cbar = plt.colorbar(sm, ax=ax1, ticks=[0, len(first_pareto_list) - 1])
 
     # Set label of colorbar.
     # cbar.ax.get_yaxis().labelpad = 15
-    cbar.ax.set_ylabel('Generation', rotation=90)
+    cbar.ax.set_ylabel("Generation", rotation=90)
 
     # Save plot and close.
-    plt.savefig(path.join(params['FILE_PATH'], "fitness.pdf"))
+    plt.savefig(path.join(params["FILE_PATH"], "fitness.pdf"))
     plt.close()
 
 
@@ -87,13 +88,13 @@ def save_plot_from_data(data, name):
 
     # Set labels.
     ax1.set_ylabel(name, fontsize=14)
-    ax1.set_xlabel('Generation', fontsize=14)
+    ax1.set_xlabel("Generation", fontsize=14)
 
     # Plot title.
     plt.title(name)
 
     # Save plot and close.
-    plt.savefig(path.join(params['FILE_PATH'], (name + '.pdf')))
+    plt.savefig(path.join(params["FILE_PATH"], (name + ".pdf")))
     plt.close()
 
 
@@ -111,8 +112,10 @@ def save_plot_from_file(filename, stat_name):
     try:
         stat = list(data[stat_name])
     except KeyError:
-        s = "utilities.stats.save_plots.save_plot_from_file\n" \
+        s = (
+            "utilities.stats.save_plots.save_plot_from_file\n"
             "Error: stat %s does not exist" % stat_name
+        )
         raise Exception(s)
 
         # Set up the figure.
@@ -129,7 +132,7 @@ def save_plot_from_file(filename, stat_name):
     save_path = pathsep.join(filename.split(pathsep)[:-1])
 
     # Save plot and close.
-    plt.savefig(path.join(save_path, (stat_name + '.pdf')))
+    plt.savefig(path.join(save_path, (stat_name + ".pdf")))
     plt.close()
 
 
@@ -147,7 +150,8 @@ def save_box_plot(data, names, title):
     from algorithm.parameters import params
 
     import matplotlib.pyplot as plt
-    plt.rc('font', family='Times New Roman')
+
+    plt.rc("font", family="Times New Roman")
 
     # Set up the figure.
     fig = plt.figure()
@@ -166,10 +170,10 @@ def save_box_plot(data, names, title):
     nums = list(range(len(data))[1:]) + [len(data)]
 
     # Plot names for each data point.
-    plt.xticks(nums, names, rotation='vertical', fontsize=8)
+    plt.xticks(nums, names, rotation="vertical", fontsize=8)
 
     # Save plot.
-    plt.savefig(path.join(params['FILE_PATH'], (title + '.pdf')))
+    plt.savefig(path.join(params["FILE_PATH"], (title + ".pdf")))
 
     # Close plot.
     plt.close()
