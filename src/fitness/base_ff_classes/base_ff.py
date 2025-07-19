@@ -17,8 +17,8 @@ class base_ff:
     # Default fitness objective is to minimise fitness.
     maximise = False
 
-    def __init__(self, label="Unnamed"):
-        self.label = label
+    def __init__(self, label=None):
+        self.label = label if label is not None else self.__class__.__name__
 
     def __call__(self, ind, **kwargs):
         """

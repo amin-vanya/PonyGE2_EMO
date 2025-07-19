@@ -42,9 +42,14 @@ def save_pareto_fitness_plot():
         ax1.plot(gen[0], gen[1], "o", color=c, ms=1)
 
     # Set labels with class names.
-    ax1.set_xlabel(ffs[0].label, fontsize=14)
-    ax1.set_ylabel(ffs[1].label, fontsize=14)
-
+    ax1.set_xlabel(
+        f"{ffs[0].label if ffs[0].label != ffs[0].__class__.__name__ else ffs[0].__class__.__name__ + '0'}",
+        fontsize=14,
+    )
+    ax1.set_ylabel(
+        f"{ffs[1].label if ffs[1].label != ffs[1].__class__.__name__ else ffs[1].__class__.__name__ + '1'}",
+        fontsize=14,
+    )
     # Plot title and legend.
     plt.title("First pareto fronts by generation")
 
