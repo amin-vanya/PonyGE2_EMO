@@ -6,7 +6,7 @@ np.seterr(all="raise")
 class base_ff:
     """
     Base fitness function class from which all fitness functions inherit.
-    
+
     This is an abstract class which exists just to be subclassed; it should not
     be instantiated.
     """
@@ -17,12 +17,12 @@ class base_ff:
     # Default fitness objective is to minimise fitness.
     maximise = False
 
-    def __init__(self):
-        pass
+    def __init__(self, label=None):
+        self.label = label if label is not None else self.__class__.__name__
 
     def __call__(self, ind, **kwargs):
         """
-        
+
 
         :param ind: An individual to be evaluated.
         :return: The fitness of the evaluated individual.
@@ -34,8 +34,7 @@ class base_ff:
             # class.
             fitness = self.evaluate(ind, **kwargs)
 
-        except (FloatingPointError, ZeroDivisionError, OverflowError,
-                MemoryError):
+        except (FloatingPointError, ZeroDivisionError, OverflowError, MemoryError):
             # FP err can happen through eg overflow (lots of pow/exp calls)
             # ZeroDiv can happen when using unprotected operators
             fitness = base_ff.default_fitness
@@ -58,7 +57,7 @@ class base_ff:
         implementing a new fitness function, merely over-write this function
         in your own fitness function. All fitness functions must inherit from
         the base fitness function class.
-        
+
         :param ind: An individual to be evaluated.
         :param kwargs: Optional extra arguments.
         :return: The fitness of the evaluated individual.
